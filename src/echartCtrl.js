@@ -35,8 +35,8 @@ export class EChartCtrl extends MetricsPanelCtrl {
         label: 'Others'
       },
       html: ['<div id="$__panelId" class="echart-panel__chart"></div>',
-              '<script> $("#$__panelId").one("init-markup", function(ev, data){}) </script>',
-              '<script> $("#$__panelId").one("echart-changed", function(ev, data){}) </script>'
+              '<script> $("#$__panelId").on("init-markup", function(ev, data){}) </script>',
+              '<script> $("#$__panelId").on("echart-changed", function(ev, data){}) </script>'
             ].join('\r\n'),
       echartError: ''
     };

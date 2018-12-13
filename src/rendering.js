@@ -94,7 +94,9 @@ export default class EChartRendering {
       { id: 'liquidfill', src: '/public/plugins/grafana-echart-panel/lib/echarts/liquidfill.min.js' },
       { id: 'zrender', src: '/public/plugins/grafana-echart-panel/lib/echarts/zrender.min.js' },
       { id: 'claygl', src: '/public/plugins/grafana-echart-panel/lib/echarts/claygl.min.js' },
-      { id: 'echarts-gl', src: '/public/plugins/grafana-echart-panel/lib/echarts/echarts-gl.min.js' }
+      { id: 'echarts-gl', src: '/public/plugins/grafana-echart-panel/lib/echarts/echarts-gl.min.js' },
+      { id: 'dataTool',src: '/public/plugins/grafana-echart-panel/lib/echarts/dataTool.min.js' }
+
     ];
     plugins.filter(p => $(`#${p.id}`).length === 0)
       .map(p => this.loadAsset(p.id, p.src));
